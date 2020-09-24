@@ -14,7 +14,7 @@ musicForm.addEventListener('submit', (e) => {
     messageTwo.textContent = ''
     artist.textContent = ''
 
-    fetch('http://192.168.0.116:3000/music?search=' + searchQuery).then((response) => {
+    fetch('/music?search=' + searchQuery).then((response) => {
         response.json().then((data) => {
 
             if (data.error) {

@@ -5,6 +5,7 @@ const searchResults = require('./utils/searchresults');
 const trackInfo = require('./utils/trackinfo');
 
 const app = express()
+const port = process.env.PORT || 3000 
 
 // Paths
 const publicPath = path.join(__dirname, '../public')
@@ -90,8 +91,8 @@ app.get('*', (req, res) => {
 })
 
 
-//Start Server on Port 3000
-app.listen(3000, () => {
+//Start Server on Port
+app.listen(port, () => {
 
-    console.log('Server Started...');
+    console.log('Server Started on ' + port + '...');
 })
