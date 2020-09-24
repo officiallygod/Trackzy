@@ -1,0 +1,250 @@
+body {
+    color: #444;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 1336px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    margin: 16px 0;
+    color: #000;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DDD;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.header--nav {
+    padding: 0 8px;
+}
+
+.header--nav a {
+    color: #888;
+    margin-right: 24px;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.header--nav a:hover {
+    color: rgb(0, 192, 192);
+}
+
+.flex_main {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex_right {
+    max-width: 70%;
+}
+
+.flex_right h3 {
+    font-size: 30px;
+    color: #444;
+}
+
+.flex_right p {
+    color: #777;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.potrait {
+    height: 250px;
+    width: 250px;
+    margin: 0 50px;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.potrait:hover {
+    transform: scale(1.06);
+}
+
+
+footer {
+    margin-top: 32px;
+    padding: 16px;
+    color: #888;
+    text-align: center;
+    border-top: 1px solid #DDD;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    transition: all 0.6s;
+}
+
+footer h2 a:hover {
+    color: red;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 16px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 50%;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 32px auto;
+    margin-top: 64px;
+    display: block;
+    letter-spacing: 1.5px;
+    box-shadow: 5px 5px 3px 1px rgba(119, 119, 119, 0.2);
+
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+}
+
+button {
+
+    margin-bottom: 64px;
+    padding: 16px 30px;
+    font-size: 17px;
+    color: black;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    transition: all 0.5s;
+    border: 1px solid #ccc;
+    background-color: #b9fffd;
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 3px 1px rgba(119, 119, 119, 0.2);
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+    background-color: #98fffc;
+    box-shadow: 5px 5px 8px 3px rgba(119, 119, 119, 0.3);
+}
+
+#message-1 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 1.8px;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#message-2 {
+
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: rgb(255, 62, 62);
+}
+
+#artist {
+    color: #333;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+#message-1:hover,
+#artist:hover {
+    transform: scale(1.1);
+}
+
+.help-main {
+    font-size: 35px;
+    letter-spacing: 1.6px;
+    font-weight: 100;
+    color: #000;
+}
+
+.help-para {
+    font-size: 20px;
+    line-height: 30px;
+    color: #666;
+    letter-spacing: 1.2px;
+}
+
+.flex-thank {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.color-change {
+    color: red;
+}
+
+.help-thank {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    letter-spacing: 1.6px;
+    font-weight: 100;
+    color: #555;
+}
+
+.help-team {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 26px;
+    letter-spacing: 1.6px;
+    font-weight: 100;
+    cursor: pointer;
+    color: rgb(0, 196, 196);
+}
+
+.help-team a {
+    text-decoration: none;
+    color: rgb(0, 196, 196);
+    transition: color 0.2s ease-in;
+}
+
+.help-team a:hover {
+    color: rgb(0, 156, 156);
+}
+
+.error-main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header-flex {
+    display: flex;
+    align-items: flex-start;
+}
